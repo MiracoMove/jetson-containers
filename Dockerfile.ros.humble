@@ -167,7 +167,7 @@ RUN mkdir -p ${ROS_ROOT}/src && \
     rosdep install -y \
     	  --ignore-src \
        --from-paths src \
-	  --rosdistro ${ROS_DISTRO} \
+	  --rosdistro ${ROS_DISTRO} && \
 	  # --skip-keys "libopencv-dev libopencv-contrib-dev libopencv-imgproc-dev python-opencv python3-opencv" && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean && \
